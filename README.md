@@ -5,7 +5,7 @@ MONSTER SLAYER
 Simple game in which you need to defeat the monster.
 
 ### Built With
-HTML5/CSS/JS
+HTML/CSS/JS
 
 ### Authors
 Poputa Alexandru
