@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Monster Slayer</title>
+</head>
+<body>
+
+<div class="intro-screen">
+    <div class="intro-msg">
+        <!-- <p>Reminder: this is just a game. In reality you should eat the ground if you were that knight.</p> -->
+        <a id='startGame'>Click to start the game</a>
+    </div>
+</div>
+
+<div class="reset-screen">
+    <div class="reset-msg">
+        <p id='winningMsg'></p>
+        <a id='resetBtnTwo' class='info-btn'>Click to play again</a>
+    </div>
+</div>
+
+<div class="info-screen">
+    <div class="info-msg">
+        <p></p>
+    </div>
+</div>
+
+<div class="content">
+    <div class="turn-msg">
+        <p id="playerTurn">Your turn</p>
+        <p id="enemyTurn" class="hide">Enemy turn</p>
+        <p id="roundInfo">Round: 1</p>
+    </div>
+    <div class="players">
+        <div class="knight">
+            <div class="hp-bar">
+                <div class="hp-bar-value knight-bar-value">
+                    <p id="knightHpText">100</p>
+                </div>
+            </div>
+            <img src="./assets/k.png" alt="Knight" class="knight-img">
+            <div class="shield-item">
+                <img src="./assets/shield-1.png" id="shieldIcon" alt="Shield" class="shield-img hide">
+                <p id="shieldValue"></p>
+            </div>
+        </div>
+        <div class="monster">
+            <p id="monsterAttack"></p>
+            <div class="hp-bar">
+                <div class="hp-bar-value monster-bar-value">
+                     <p id="monsterHpText">100</p>
+                </div>
+            </div>
+            <img src='./assets/monster-1.png' alt="Dragon" data-monster="1" class="dragon-img">
+        </div>
+    </div>
+    <div class="bottom-items">
+        <div class="coins">
+            <img src="./assets/coin.png" alt="Coin" class="coin-img">
+            <p id="coinsValue"></p>
+        </div>
+        <div class="buttons">
+            <button id="attackBtn" class="bottom-btn">Attack for 15</button>
+            <button id="blockBtn" class="bottom-btn">Block for 15</button>
+            <button id="anbBtn" class="bottom-btn">Attack for 10 & block for 5</button>
+        </div>
+    </div>
+    <div class="info-banner">
+         <button id="resetBtn" class="info-btn">Reset</button>
+         <button id="infoBtn" class="info-btn">Info</button>
+    </div>
+</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
