@@ -15,7 +15,6 @@ var monsterHpValue = document.getElementsByClassName("monster-bar-value");
 var knightHpAfter = 100;
 var monsterHpAfter = 100;
 
-// var monsterHpAfter = 100;
 var knightText = document.getElementById("knightHpText");
 var monsterText = document.getElementById("monsterHpText");
 
