@@ -15,7 +15,6 @@ var monsterHpValue = document.getElementsByClassName("monster-bar-value");
 var knightHpAfter = 100;
 var monsterHpAfter = 100;
 
-// var monsterHpAfter = 100;
 var knightText = document.getElementById("knightHpText");
 var monsterText = document.getElementById("monsterHpText");
 
@@ -48,7 +47,7 @@ var resetBtn = document.getElementById("resetBtn");
 var resetBtnTwo = document.getElementById("resetBtnTwo");
 var infoBtn = document.getElementById("infoBtn");
 
-// Close the intro screen at click 
+// Close the intro screen
 startGame.addEventListener("click",function(){
   introScreen[0].classList.toggle('fade');
   setTimeout(()=>{
@@ -56,6 +55,7 @@ startGame.addEventListener("click",function(){
   }, 500)
 })
 
+// Reset the game
 resetBtn.addEventListener("click", resetGame);
 resetBtnTwo.addEventListener("click", function(){
   resetScreen[0].style.display = 'none';
@@ -257,7 +257,7 @@ function randomNum(){
   monsterAttack = document.getElementById("monsterAttack").innerHTML = "<img src='./assets/sword.png' id='monsterSword'></img>" + randomAttack;
 }
 
-// Reset the game
+// Function to reset the game
 function resetGame(){
   defaultCoins = 3;
   coinsValue.innerHTML = defaultCoins;
