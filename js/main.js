@@ -262,6 +262,9 @@ function resetGame(){
   defaultCoins = 3;
   coinsValue.innerHTML = defaultCoins;
   blockValue = 0;
+  shieldValue.innerHTML = blockValue;
+  shieldItem.classList.add("hide");
+  shieldValue.classList.add("hide");
   round = 1;
   roundInfo.innerHTML = 'Round: 1';
   monsterHpAfter = 100;
